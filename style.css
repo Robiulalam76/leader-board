@@ -1,0 +1,209 @@
+body {
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* comon style css code start */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    margin-top: 21px;
+    width: 870px;
+    border-radius: 5px;
+}
+
+.top-title {
+    color: #562EFF;
+}
+
+/* comon style css code end */
+
+/* top player and top blog section style start */
+/* top player section start */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.top-player {
+    margin: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    height: 56px;
+}
+
+.player h3 {
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+/* top player section end */
+
+/* top blog section start */
+.top-blog {
+    margin: 30px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-details {
+    margin: 0 16px 0 16px;
+}
+
+.blog-details h3 {
+    font-size: 20px;
+}
+
+.blog-details p {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-details .player-author {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* top player and top blog section style end */
+
+/* Latest Course style css start */
+.latest-course {
+    margin: 30px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.course-banner img {
+    width: 224px;
+}
+
+.course-author {
+    text-decoration: none;
+    color: #ED6B4F;
+    font-size: 14.69px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-ratings .gold-star {
+    color: #FFC014;
+    width: 12.39px;
+}
+
+.course-ratings .empty {
+    color: #AEAEAE;
+    width: 12.39px;
+    opacity: 0.25;
+}
+
+.course-ratings .rating-point {
+    color: #A2A2A2;
+}
+
+.course-clock p {
+    color: #ED6B4F;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px 10px;
+    /* width: 94.83px; */
+}
+
+/* Latest Course style css end */
+
+/* footer section */
+footer {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+/* ----------------------------------------------------
+----------small device responsive---------------------- */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* tablate device Responsive */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
